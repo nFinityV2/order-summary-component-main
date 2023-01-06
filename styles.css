@@ -5,60 +5,103 @@ body {
     font-size: 1rem;
     text-align: center;
     color: hsl(224, 23%, 55%);
-    line-height: 1.8;
+    
 }
 
 main {
     display: flex;
     justify-content: center;
+    margin: 100px;
 }
 
-section {
-    width: 350px;
-}
-
-h2, h3 {
+h2, h3 , .plan-type{
     color: hsl(223, 47%, 23%);
     font-weight: 900;
+    line-height: 1.5;
+}
+
+p {
+    line-height: 1.8;
+    padding: 3px;
 }
 
 a {
     color: hsl(245, 75%, 52%);
     font-weight: 700;
 }
+.content-container {
+    margin: 0 10px 10px;
+}
 
 .img-container {
-    overflow: hidden;
+    background-image: url('images/illustration-hero.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
 }
 
 .plan-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
     border: none;
     border-radius: 10px;
-    background-color: hsl(225, 100%, 94%);
+    background-color: hsl(225, 100%, 98%);
 }
 
-.plan-container h3 {
-    font-size: 0.99rem;
+.plan-container a:hover {
+    text-decoration: none;
+    color:hsl(245, 50%, 52%);
 }
+
+.plan p{
+    margin: 0;
+}
+
 
 .btn-container {
     display: inline-flex;
     flex-direction: column;
-    margin: 20px;
+    padding-top: 20px;
 }
 
 .btn-container a {
     text-decoration: none;
 }
 
+.btn {
+    padding: 15px 100px;
+    border-radius: 10px;
+    border: none;
+}
+
+.spacer {
+    color: hsl(225, 100%, 98%);
+}
+
+.payment {
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+    white-space: nowrap;
+}
+
+.payment:hover {
+   background-color: hsl(245, 50%, 52%)
+}
+
+.cancel {
+    color: hsl(224, 23%, 55%);
+}
+
+.cancel:hover {
+    color: hsl(223, 47%, 23%);
+}
 
 .order-summary-card {
+    overflow: hidden;
+    width: 375px;
     border-radius: 10px;
     box-shadow: 5px 5px 20px darkgrey;
-    padding: 30px;
-    
 }
 
-.summary {
-    margin: 16px;
-}
