@@ -30,7 +30,7 @@ a {
     font-weight: 700;
 }
 .content-container {
-    margin: 0 10px 10px;
+    margin: 0 50px 10px;
 }
 
 .img-container {
@@ -61,7 +61,7 @@ a {
 
 
 .btn-container {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     padding-top: 20px;
 }
@@ -71,9 +71,10 @@ a {
 }
 
 .btn {
-    padding: 15px 100px;
+    padding: 15px ;
     border-radius: 10px;
     border: none;
+    white-space: nowrap;
 }
 
 .spacer {
@@ -83,7 +84,6 @@ a {
 .payment {
     background-color: hsl(245, 75%, 52%);
     color: hsl(225, 100%, 98%);
-    white-space: nowrap;
 }
 
 .payment:hover {
@@ -105,3 +105,9 @@ a {
     box-shadow: 5px 5px 20px darkgrey;
 }
 
+@media (min-width: 1000px) {
+
+    .order-summary-card {
+        width: 400px;
+    }
+}
